@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Heart, MapPin, Mail, Phone } from "lucide-react";
-import logo from "../assets/logo.jpg";
+import logo from "../../public/logo.jpg";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());

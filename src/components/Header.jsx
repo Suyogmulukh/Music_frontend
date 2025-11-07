@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoImg from "../assets/logo.jpg";
 import Login from "./Login";
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,18 +35,18 @@ const Header = () => {
     <header
       className={`sticky top-0 z-40 transition-all duration-500 backdrop-blur-sm
         ${
-        scrolled
-        ? " bg-gradient-to-r from-indigo-400 to-cyan-400 shadow-lg shadow-black/[0.03]"
+          scrolled
+            ? " bg-gradient-to-r from-indigo-400 to-cyan-400 shadow-lg shadow-black/[0.03]"
             : "bg-gradient-to-r from-indigo-400 to-cyan-400"
         }`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          {/* Enhanced Logo */}
+          {/* Updated Logo */}
           <div className="flex items-center gap-3 group">
-            <div className="w-12 h-12  rounded-3xl flex items-center justify-center relative overflow-hidden ">
+            <div className="w-12 h-12 rounded-3xl flex items-center justify-center relative overflow-hidden">
               <img
-                src={logoImg}
+                src="/logo.jpg" // Updated path
                 alt="Logo"
                 className="absolute inset-0 w-full h-full object-cover rounded-4xl transform group-hover:scale-110 transition-all duration-500"
               />

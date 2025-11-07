@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
 
-// Import assets directly
-import boys from "../assets/boys.jpg";
-import instruments from "../assets/instruments.jpg";
-import boys2 from "../assets/boys2.jpg";
-import livePerformances from "../assets/live-Performances.mp4";
-import liveVideo from "../assets/live-video.mp4";
-
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [selectedImage, setSelectedImage] = useState(null);
@@ -20,7 +13,7 @@ const Gallery = () => {
       title: "Historic Fort Outing",
       category: "team",
       description: "Memorable group outing at the fort",
-      src: boys,
+      src: "/Boys.jpg",
     },
     {
       id: 2,
@@ -29,7 +22,7 @@ const Gallery = () => {
       title: "Traditional Instruments",
       category: "Instruments",
       description: "Beautifully decorated musical instruments",
-      src: instruments,
+      src: "/Instruments.jpg",
     },
     {
       id: 3,
@@ -38,7 +31,7 @@ const Gallery = () => {
       title: "Group Performance",
       category: "team",
       description: "Team photo during live event",
-      src: boys2,
+      src: "/boys2.jpg",
     },
     {
       id: 4,
@@ -47,7 +40,7 @@ const Gallery = () => {
       title: "Live Performance Video",
       category: "performance",
       description: "Electrifying live performance highlights",
-      src: livePerformances,
+      src: "/live-Performances.mp4",
     },
     {
       id: 6,
@@ -56,7 +49,7 @@ const Gallery = () => {
       title: "Event Highlights",
       category: "performance",
       description: "Best moments captured",
-      src: liveVideo,
+      src: "/live-video.mp4",
     },
   ];
 
