@@ -46,7 +46,7 @@ const Header = () => {
           <div className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-3xl flex items-center justify-center relative overflow-hidden">
               <img
-                src="/logo.jpg" // Updated path
+                src="/logo.jpg"
                 alt="Logo"
                 className="absolute inset-0 w-full h-full object-cover rounded-4xl transform group-hover:scale-110 transition-all duration-500"
               />

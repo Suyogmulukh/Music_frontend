@@ -1,6 +1,6 @@
 import React from "react";
 import { Play, ChevronDown } from "lucide-react";
-import backgroundImage from "../../public/background.png";
+import backgroundImage from "../../public/Background.png";
 
 const Hero = ({ onVideoClick, onInquiryClick }) => {
   const scrollToCalendar = () => {
