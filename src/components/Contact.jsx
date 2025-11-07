@@ -52,7 +52,8 @@ const Contact = () => {
             >
               {/* Icon */}
               <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} p-4 mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <item.icon size={32} className="text-white" />
+                <item.icon size={32} className="text-white
+                " />
               </div>
 
               {/* Content */}
