@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import boys from "../assets/boys.jpg";
-import boys2 from "../assets/boys2.jpg";
-import instrument from "../assets/instruments.jpg";
-import livePerformance from "../assets/live-Performances.mp4";
-import liveVideo from "../assets/live-video.mp4";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -18,7 +13,7 @@ const Gallery = () => {
       title: "Historic Fort Outing",
       category: "team",
       description: "Memorable group outing at the fort",
-      src: boys,
+      src: "/assets/images/boys.jpg",
     },
     {
       id: 2,
@@ -27,7 +22,7 @@ const Gallery = () => {
       title: "Traditional Instruments",
       category: "Instruments",
       description: "Beautifully decorated musical instruments",
-      src: instrument,
+      src: "/assets/images/instruments.jpg",
     },
     {
       id: 3,
@@ -36,7 +31,7 @@ const Gallery = () => {
       title: "Group Performance",
       category: "team",
       description: "Team photo during live event",
-      src: boys2,
+      src: "/assets/images/boys2.jpg",
     },
     {
       id: 4,
@@ -45,17 +40,8 @@ const Gallery = () => {
       title: "Live Performance Video",
       category: "performance",
       description: "Electrifying live performance highlights",
-      src: livePerformance,
+      src: "/assets/videos/live-Performances.mp4",
     },
-    // {
-    //   id: 5,
-    //   type: "photo",
-    //   emoji: "🎉",
-    //   title: "Festival Celebration",
-    //   category: "",
-    //   description: "Festival performance coverage",
-    //   src: "https://picsum.photos/id/1011/1200/800",
-    // },
     {
       id: 6,
       type: "video",
@@ -63,7 +49,7 @@ const Gallery = () => {
       title: "Event Highlights",
       category: "performance",
       description: "Best moments captured",
-      src: liveVideo,
+      src: "/assets/videos/live-video.mp4",
     },
   ];
 
