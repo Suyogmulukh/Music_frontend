@@ -89,7 +89,7 @@ const InquiryModal = ({ date, isOpen, onClose }) => {
     setAiLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:3000/api/inquiry/ai-message",
+        "https://music-backend-inky.vercel.app/api/inquiry/ai-message",
         {
           method: "POST",
           headers: {

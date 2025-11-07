@@ -18,7 +18,7 @@ const OrderTable = () => {
   const fetchOrders = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:3000/api/orders", {
+      const response = await axios.get("https://music-backend-inky.vercel.app/api/orders", {
         headers: { "x-auth-token": token },
       });
       setOrders(response.data.orders);
@@ -33,7 +33,7 @@ const OrderTable = () => {
     if (window.confirm("Are you sure you want to delete this order?")) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:3000/api/orders/${id}`, {
+        await axios.delete(`https://music-backend-inky.vercel.app/api/orders/${id}`, {
           headers: { "x-auth-token": token },
         });
         toast.success("Order deleted successfully");
@@ -48,7 +48,7 @@ const OrderTable = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:3000/api/orders/download/all",
+        "https://music-backend-inky.vercel.app/api/orders/download/all",
         {
           headers: { "x-auth-token": token },
           responseType: "blob",

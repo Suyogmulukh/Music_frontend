@@ -10,9 +10,18 @@ export default defineConfig({
     assetsDir: "assets",
     rollupOptions: {
       output: {
-        manualChunks: undefined,
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split(".").at(1);
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = "images";
+          } else if (/mp4|webm|ogg/i.test(extType)) {
+            extType = "videos";
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
       },
     },
   },
   publicDir: "public",
+  base: "/",
 });

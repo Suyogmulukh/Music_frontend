@@ -29,8 +29,8 @@ const OrderModal = ({ isOpen, onClose, order, onSuccess }) => {
     try {
       const token = localStorage.getItem("token");
       const url = order
-        ? `http://localhost:3000/api/orders/${order._id}`
-        : "http://localhost:3000/api/orders";
+        ? `https://music-backend-inky.vercel.app/api/orders/${order._id}`
+        : "https://music-backend-inky.vercel.app/api/orders";
       const method = order ? "put" : "post";
 
       await axios[method](url, formData, {

@@ -19,7 +19,7 @@ const Login = ({ onClose }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://music-backend-inky.vercel.app/api/auth/login",
         formData
       );
       localStorage.setItem("token", res.data.token);
